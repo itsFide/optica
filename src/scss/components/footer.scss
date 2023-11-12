@@ -1,0 +1,104 @@
+.footer {
+    padding: 50px 57px;
+    background: var(--bg-2);
+    // .footer__inner
+
+    &__inner {
+    }
+
+    // .footer__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .footer__logo
+
+    &__logo {
+        width: 270px;
+        & img{
+            width: 100%;
+        }
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        & a{
+            color: var(--dark);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            transition: all .3s;
+            line-height: 140%; /* 22.4px */
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+    &-left{
+        display: flex;
+        gap: 30px;
+    }
+}
+.container {
+}
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    // .footer-socials__item
+
+    &__item {
+        width: 37px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid var(--dark);
+        & svg path{
+            transition: all .3s;
+        }
+        &:hover{
+            background-color: var(--dark);
+            & svg path{
+                fill: #fff;
+            }
+        }
+    }
+}
+.footer-nav {
+    & ul{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        & li{
+            & a{
+                color: var(--dark);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+                transition: all .3s;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+.copyright {
+    color: var(--dark);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 22.4px */
+}

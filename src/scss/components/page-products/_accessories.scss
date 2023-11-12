@@ -1,0 +1,183 @@
+.accessories {
+
+    // .accessories__inner
+
+    &__inner {
+    }
+
+    // .accessories__title
+
+    &__title {
+        width: 50%;
+    }
+
+    // .accessories__img
+
+    &__img {
+        height: 570px;
+        & img{
+            height: 100%;
+        }
+    }
+}
+.container {
+}
+.title {
+}
+.accessories-tabs {
+    margin-top: 60px;
+    // .accessories-tabs__header
+
+    &__header {
+    }
+
+    // .accessories-tabs__header-item
+
+    &__header-item {
+        justify-content: center;
+    }
+
+    // .accessories-tabs__content-item
+
+    &__content-item {
+    }
+
+    // .accessories-tabs__info
+
+    &__info {
+    }
+}
+.tabs {
+
+    // .tabs__header
+
+    &__header {
+    }
+
+    // .tabs__header-item
+
+    &__header-item {
+    }
+
+    // .tabs__content
+
+    &__content {
+    }
+
+    // .tabs__content-item
+
+    &__content-item {
+    }
+
+    // .tabs__content-info
+
+    &__content-info {
+    }
+
+    // .tabs__content-title
+
+    &__content-title {
+    }
+
+    // .tabs__content-descr
+
+    &__content-descr {
+    }
+
+    // .tabs__content-list
+
+    &__content-list {
+    }
+
+    // .tabs__content-list-title
+
+    &__content-list-title {
+    }
+
+    // .tabs__content-img
+
+    &__content-img {
+    }
+
+    // .tabs__content-brand
+
+    &__content-brand {
+    }
+
+    // .tabs__content-logo
+
+    &__content-logo {
+    }
+
+    // .tabs__content-brand-descr
+
+    &__content-brand-descr {
+    }
+}
+.active {
+}
+.accessories-swiper {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.products {
+
+    // .products__buttons
+
+    &__buttons {
+    }
+
+    // .products__img
+
+    &__img {
+    }
+
+    // .products__img-item
+
+    &__img-item {
+    }
+
+    // .products__content
+
+    &__content {
+    }
+
+    // .products__descr
+
+    &__descr {
+    }
+}
+.products-prev {
+}
+.products-next {
+}
+.products-tabs {
+
+    // .products-tabs__title
+
+    &__title {
+    }
+
+    // .products-tabs__descr
+
+    &__descr {
+    }
+
+    // .products-tabs__list
+
+    &__list {
+    }
+
+    // .products-tabs__info
+
+    &__info {
+    }
+}
+.accessories-item {
+}
+.products-logo {
+}

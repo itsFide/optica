@@ -1,0 +1,165 @@
+.glasses-info {
+    padding-bottom: 0;
+    // .glasses-info__inner
+
+    &__inner {
+    }
+
+    // .glasses-info__text
+
+    &__text {
+        display: flex;
+        gap: 131px;
+    }
+
+    // .glasses-info__title
+
+    &__title {
+        color: var(--blue);
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 60px */
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    // .glasses-info__descr
+
+    &__descr {
+        color: var(--dark);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 28.8px */
+        & span{
+            color: var(--red);
+        }
+    }
+
+    // .glasses-info__items
+
+    &__items {
+        margin-top: 60px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    // .glasses-info__item
+
+    &__item {
+        width: calc((100% / 3) - 13.33px);
+        padding: 15px;
+        background: var(--bg-2);
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        &::after,
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 140px;
+            height: 50px;
+            border: 2px solid;
+            transition: all 0.6s ease;
+            border-radius: 2px;
+        }
+        
+
+        &::after{
+            bottom: 0;
+            right: 0;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: var(--blue);
+            border-right-color: var(--blue);
+        }
+        
+
+        &::before{
+            top: 0;
+            left: 0;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-top-color: var(--blue);
+            border-left-color: var(--blue);
+
+        }
+
+        &:hover:after,
+        &:hover:before{
+            width: 100%;
+            height: 100%;
+        }
+        &:hover .glasses-info__description  {
+            bottom: -40%;
+        }
+    }
+
+    // .glasses-info__img
+
+    &__img {
+        width: 100%;
+        height: 320px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .glasses-info__excerpt
+
+    &__excerpt {
+        margin-top: 10px;
+        & p{
+            color: var(--dark);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 140%; /* 22.4px */
+            & span{
+                color: var(--red);
+            }
+        }
+    }
+
+    // .glasses-info__label
+    &__description{
+        position: absolute;
+        bottom: -100%;
+        background: var(--bg-2);
+        height: 100%;
+        padding: 10px 0;
+        transition: all .3s;
+        & p{
+            color: var(--dark);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 150%; /* 24px */
+            & span{
+                color: var(--red);
+            }
+        }
+    }
+    &__label {
+        color: var(--dark);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 18px */
+        margin-top: auto;
+        text-align: right;
+        position: relative;
+        z-index: 2;
+        opacity: 0.5;
+    }
+}
+.container {
+}

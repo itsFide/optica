@@ -1,0 +1,163 @@
+.hero {
+    background-color: #15173A;
+    // .hero__inner
+    overflow: hidden;
+    &__inner {
+        position: relative;
+        padding-top: 364px;
+        padding-bottom: 114px;
+        &::before{
+            content: "optika вижу";
+            position: absolute;
+            top: 0;
+            width: 200%;
+            left: -8%;
+            font-family: "Geologica";
+            color: #383863;
+            font-size: 300px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 100%; /* 300px */
+            letter-spacing: -9px;
+            text-transform: uppercase;
+        }
+    }
+
+    // .hero__text
+
+    &-text {
+        position: relative;
+        z-index: 10;
+    }
+
+    // .hero__title
+
+    &__title {
+        color: var(--bg);
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%; /* 80px */
+        text-transform: uppercase;
+        & span{
+            color: var(--red);
+        }
+    }
+
+    // .hero__descr
+
+    &__descr {
+        color: var(--bg);
+        font-size: 20px;
+        margin-top: 30px;
+        width: 39.8%;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 170%; /* 34px */
+    }
+
+    // .hero__btn
+
+    &__btn {
+        margin-top: 40px;
+        display: inline-flex;
+        padding: 10px 50px;
+        border-radius: 4px;
+        background: #17809C;
+        color: #F6F4EE;
+        font-size: 20px;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 30px */
+        transition: all .3s;
+        &:hover{
+            background: #10586c;
+        }
+    }
+
+    // .hero__img
+
+    &__img {
+
+        & img{
+            // width: 100%;
+            height: 100%;
+            // object-fit: cover;    
+        }
+    }
+    &-shape{
+        position: absolute;
+        border-radius: 50%;
+    }
+}
+.container {
+}
+.ping-shape-left {
+    width: 1244px;
+    height: 1244px;
+    left: -44%;
+    top: -15%;
+    opacity: 0.17;
+    background: #6C3636;
+
+    filter: blur(200px);
+}
+.ping-shape-person {
+    width: 796px;
+    height: 798px;
+    z-index: 1;
+    opacity: 0.17;
+    background: #ED2626;
+    filter: blur(200px);
+    left: 72%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.blue-shape-person {
+    z-index: 1;
+    width: 930px;
+    height: 930px;
+    border-radius: 50%;
+    background: var(--blue);
+    left: 72%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    filter: blur(200px);
+}
+.blue-shape-person-2{
+    display: none;
+    z-index: 1;
+    width: 796px;
+    height: 796px;
+    border-radius: 50%;
+    left: 72%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    opacity: 0.17;
+    background: #3391D1;
+
+    filter: blur(200px);
+    &.active{
+        display: block;
+    }
+}
+.swiper {
+}
+.hero-swiper {
+    width: 100%;
+    position: absolute;
+    right: -20%;
+    top: 0;
+    height: 100%;
+    // .hero-swiper__slide
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

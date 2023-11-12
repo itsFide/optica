@@ -1,0 +1,123 @@
+.about {
+    // .about__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .about__info
+
+    &__info {
+        max-width: 800px;
+    }
+
+    // .about__img
+
+    &__img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    // .about__title
+
+    &__title {
+        color: var(--blue);
+        margin-top: 30px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 30px */
+        text-transform: uppercase;
+    }
+
+    // .about__descr
+
+    &__descr {
+        color: var(--dark);
+        margin-top: 15px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 30px */
+    }
+
+    // .about__more
+
+    &__more {
+        color: var(--dark);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%; /* 22.4px */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 35px;
+        & img{
+            transition: all .3s;
+        }
+        &:hover{
+            & img{
+                transform: translateX(10px);
+            }
+        }
+    }
+}
+.container {
+}
+.specialists {
+    max-width: 420px;
+    // .specialists__slider
+
+    &__slider {
+        & .swiper-wrapper{
+            margin-top: 30px;
+        }
+    }
+
+    // .specialists__title
+
+    &__title {
+        color: var(--blue);
+        font-size: 30px;
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 30px */
+        text-transform: uppercase;
+    }
+    &__descr{
+        margin-top: 15px;
+        color: var(--dark);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 30px */
+    }
+    &__buttons{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+}
+.swiper {
+}
+.specialists-prev {
+    cursor: pointer;
+}
+.specialists-next {
+    cursor: pointer;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.specialists-item {
+    & img{
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+    }
+}

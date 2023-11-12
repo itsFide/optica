@@ -1,0 +1,107 @@
+.header {
+    padding: 17px 0;
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__logo
+
+    &__logo {
+        width: 270px;
+        & img{
+            width: 100%;
+        }
+    }
+
+    // .header__nav
+
+    &__nav {
+        & ul{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            & li{
+                & a{
+                    color: var(--blue);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%; /* 12px */
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                    transition: all .3s;
+                    &:hover{
+                        color: var(--red);
+                    }
+                }
+            }
+        }
+    }
+
+    // .header__lang
+
+    &__lang {
+        display: flex;
+        gap: 20px;
+        & a{
+            color: var(--blue);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 12px */
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            transition: all .3s;
+            &:hover{
+                color: var(--red);
+            }
+        }
+        .lang--active{
+            color: var(--red);
+        }
+    }
+    &-burger{
+        width: 20px;
+        height: 15px;
+        cursor: pointer;
+        display: none;
+        position: relative;
+        z-index: 101;
+        &.active span{
+            &:nth-child(1){
+                top: 50%;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                top: 50%;
+                opacity: 0;
+                transform: rotate(45deg);
+            }
+            &:nth-child(3){
+                bottom: 37%;
+                transform: rotate(-45deg);
+            }
+        }
+        & span{
+            transition: all .3s;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            background-color: var(--red);
+            &:nth-child(1){
+                top: 0;
+            }
+            &:nth-child(2){
+                top: 45%;
+            }
+            &:nth-child(3){
+                bottom: 0;
+            }
+        }
+    }
+}
+

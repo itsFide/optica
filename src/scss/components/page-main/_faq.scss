@@ -1,0 +1,129 @@
+.faq {
+
+    // .faq__inner
+    background: var(--bg-2);
+    padding: 100px 0;
+    &__inner {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .faq__img
+
+    &__img {
+        height: 600px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title{
+        color: var(--blue);
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 39px */
+        text-transform: uppercase;
+        & span{
+            color: var(--red);
+        }
+    }
+    // .faq__items
+
+    &__items {
+        max-width: 530px;
+    }
+
+    // .faq__btn
+
+    &__btn {
+        margin-top: 25px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background-color: var(--dark);
+        border-radius: 4px;
+        color: var(--bg);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%; /* 19.6px */
+        transition: all .3s;
+        &:hover{
+            background: #232323;
+        }
+    }
+}
+.container {
+}
+.title {
+}
+.subtitle-more {
+}
+.faq-item {
+    border-bottom: 1px solid var(--dark);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    &:last-child{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border:unset;
+    }
+    // .faq-item__trigger
+    &.active{
+        border-bottom: unset;
+        & .faq-item__trigger img{
+            transform: rotate(45deg);
+        }
+        .faq-item__descr{
+            max-height: unset;
+            margin-top: 25px;
+        }
+    }
+    &__trigger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+        & img{
+            transition: all .3s;
+        }
+        & p{
+            color: var(--dark);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            text-transform: uppercase;
+            & span{
+                color: var(--blue);
+            }
+        }
+    }
+
+    // .faq-item__descr
+    &__descr {
+        // margin-top: 25px;
+        max-height: 0;
+        transition: all .3s;
+        overflow: hidden;
+        & p{
+            color: var(--dark);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 150%; /* 24px */
+            & a{
+                color: var(--blue);
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
